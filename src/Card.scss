@@ -1,0 +1,108 @@
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+.card {
+  max-width: 35rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  color: $desaturated-blue;
+  margin-bottom: 1.5rem;
+
+  &-hero {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &-heading {
+    color: $dark-blue;
+    font-size: 2.5rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 2rem;
+    font-weight: 900;
+  }
+
+  &-description {
+    line-height: 1.5;
+    padding: 0 3.6rem;
+    margin-bottom: 2rem;
+  }
+
+  &-sub {
+    display: flex;
+    background-color: $very-pale-blue;
+    margin: 0 1.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    gap: 1.5rem;
+    align-items: center;
+
+    &__description {
+      &-heading {
+        color: $dark-blue;
+        font-weight: 900;
+        font-size: 1.7rem;
+        margin-bottom: 0.5rem;
+      }
+      &-price {
+        font-weight: 500;
+      }
+    }
+
+    &-link:link,
+    &-link:visited {
+      margin-left: auto;
+      color: $bright-blue;
+      font-weight: 700;
+
+      transition: color 0.2s;
+
+      &:hover {
+        color: lighten($bright-blue, $amount: 15%);
+      }
+    }
+  }
+
+  &-cta,
+  &-cancel {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+
+  &-cta {
+    display: block;
+    margin: 2rem 1.5rem;
+    background-color: $bright-blue;
+    color: #fff;
+    padding: 1.5rem 8rem;
+    border-radius: 8px;
+    box-shadow: 0 1rem 1rem 0.2rem rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: lighten($bright-blue, $amount: 15%);
+    }
+  }
+
+  &-cancel {
+    background-color: transparent;
+    color: $desaturated-blue;
+    margin-bottom: 2rem;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}
