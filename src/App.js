@@ -1,4 +1,4 @@
-import Card from "./Card";
+ Card from "./Card";
 import Signature from "./Signature";
 import "./App.scss";
 
