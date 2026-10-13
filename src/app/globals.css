@@ -15,7 +15,7 @@
   --color-disc: #dfe6fb;
   --color-ink: #1f2e55;
   --color-muted: #63729d;
-  --color-muted-strong: #5a688f;
+  --color-muted-strong: #54628a;
   --color-accent: #382ae1;
   --color-accent-hover: #685df0;
 
@@ -72,6 +72,17 @@
 
   body {
     @apply bg-page text-ink font-display;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='375' height='194'%3E%3Cpath fill='%23D6E1FF' fill-rule='evenodd' d='M-131.808 155.366c97.026 51.512 204.233 51.512 321.62 0 117.388-51.512 223.27-51.512 317.648 0V0h-639.268v155.366z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 194px;
+  }
+
+  @media (width >= 48rem) {
+    body {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='437'%3E%3Cpath fill='%23D6E1FF' fill-rule='evenodd' d='M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z'/%3E%3C/svg%3E");
+      background-size: 100% 437px;
+    }
   }
 
   button:not(:disabled) {

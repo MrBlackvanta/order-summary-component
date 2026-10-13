@@ -1,7 +1,9 @@
+import { OrderSummaryCard } from "@/views/home";
+
 export default function Home() {
   return (
-    <main className="grid grow place-items-center">
-      <h1 className="sr-only">Order Summary</h1>
+    <main className="grid grow place-items-center px-6 py-6">
+      <OrderSummaryCard />
     </main>
   );
 }
