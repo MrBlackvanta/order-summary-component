@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${redHatDisplay.variable} antialiased`}>
-      <body className="bg-page text-ink relative flex min-h-dvh flex-col">
+      <body className="relative flex min-h-dvh flex-col">
         {children}
         <Signature />
       </body>

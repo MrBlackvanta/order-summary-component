@@ -8,9 +8,61 @@
   --font-display:
     var(--font-red-hat-display), ui-sans-serif, system-ui, sans-serif;
 
-  --color-page: hsl(225 100% 94%);
-  --color-ink: hsl(223 47% 23%);
-  --color-muted: hsl(224 23% 55%);
+  --color-page: #e0e8ff;
+  --color-wave: #d6e1ff;
+  --color-card: #ffffff;
+  --color-panel: #f7f9ff;
+  --color-disc: #dfe6fb;
+  --color-ink: #1f2e55;
+  --color-muted: #63729d;
+  --color-muted-strong: #5a688f;
+  --color-accent: #382ae1;
+  --color-accent-hover: #685df0;
+
+  --radius-card: 1.25rem;
+  --radius-control: 0.6875rem;
+
+  --shadow-card: 0 40px 40px -20px rgb(13 48 189 / 0.15);
+  --shadow-cta: 0 20px 20px rgb(56 42 225 / 0.19);
+
+  --text-title: 1.375rem;
+  --text-title--line-height: normal;
+  --text-title--font-weight: 900;
+  --text-title-md: 1.75rem;
+  --text-title-md--line-height: normal;
+  --text-title-md--font-weight: 900;
+
+  --text-body: 0.9375rem;
+  --text-body--line-height: 1.5625rem;
+  --text-body--font-weight: 500;
+  --text-body-md: 1rem;
+  --text-body-md--line-height: 1.625rem;
+  --text-body-md--font-weight: 500;
+
+  --text-plan: 0.875rem;
+  --text-plan--line-height: normal;
+  --text-plan--font-weight: 900;
+  --text-plan-md: 1rem;
+  --text-plan-md--line-height: normal;
+  --text-plan-md--font-weight: 900;
+
+  --text-price: 0.875rem;
+  --text-price--line-height: normal;
+  --text-price--font-weight: 500;
+  --text-price-md: 1rem;
+  --text-price-md--line-height: normal;
+  --text-price-md--font-weight: 500;
+
+  --text-link: 0.8125rem;
+  --text-link--line-height: normal;
+  --text-link--font-weight: 700;
+  --text-link-md: 0.875rem;
+  --text-link-md--line-height: normal;
+  --text-link-md--font-weight: 700;
+
+  --text-action: 0.9375rem;
+  --text-action--line-height: normal;
+  --text-action--font-weight: 900;
 }
 
 @layer base {
@@ -19,7 +71,7 @@
   }
 
   body {
-    @apply font-display;
+    @apply bg-page text-ink font-display;
   }
 
   button:not(:disabled) {
@@ -27,6 +79,6 @@
   }
 
   :focus-visible {
-    @apply outline-2 outline-offset-2 outline-current;
+    @apply outline-accent outline-2 outline-offset-2;
   }
 }
