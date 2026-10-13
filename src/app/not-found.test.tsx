@@ -22,7 +22,7 @@ describe("NotFound", () => {
   });
 
   it("carries its own title and stays out of the index", () => {
-    expect(metadata.title).toBe("Order Summary | Page not found");
+    expect(metadata.title).toBe("Cadence | Page not found");
     expect(metadata.robots).toEqual({ index: false });
   });
 });
