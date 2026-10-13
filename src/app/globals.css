@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@source not "../../*.md";
+@source not "../**/*.test.ts";
+@source not "../**/*.test.tsx";
+@source not "../test";
+
+@theme {
+  --font-display:
+    var(--font-red-hat-display), ui-sans-serif, system-ui, sans-serif;
+
+  --color-page: hsl(225 100% 94%);
+  --color-ink: hsl(223 47% 23%);
+  --color-muted: hsl(224 23% 55%);
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply font-display;
+  }
+
+  button:not(:disabled) {
+    @apply cursor-pointer;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-current;
+  }
+}
